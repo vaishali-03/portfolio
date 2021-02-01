@@ -1,0 +1,145 @@
+/* Global Styles
+---------------------------*/
+html{
+    box-sizing: border-box;
+  }
+  *, *:before,*:after{
+    box-sizing: inherit;
+  }
+body{
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+a{
+    color: #FFE66D;
+}
+a:hover{
+    text-decoration: none;
+}
+h1{
+    font-size: 100px;
+    line-height: 1;
+}
+h2{
+    font-size: 45px;
+}
+h1, h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin:0;
+}
+.content-wrap{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 85%;
+}
+.divider > section{
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+td, th{
+    border: 1px solid #999;
+    padding: 0.5rem;
+}
+table{
+    border-collapse: collapse;
+}
+
+/* PROFILE / ABOUT
+---------------------------*/
+header{
+    background: #2F3061;
+    color: #F7FFF7;
+}
+h3{
+    margin-bottom: 0;
+}
+h3+p{
+    font-style: italic;
+}
+h3~p{
+    margin:0;
+}
+
+
+/* CERTIFICATIONS / PORTFOLIO
+----------------------------*/
+.certifications{
+    background: #F7FFF7;
+}
+.certifications a{
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 1px 8px;
+    border-radius: 4px;
+}
+.certifications a:hover{
+    background: rgba(47, 48, 97, 80%)
+}
+
+
+/* POSITIONS OF RESPONSIBILITY
+----------------------------*/
+.POR, .por{
+    background: #ACC6D7;
+}
+
+/* EDUCATION
+----------------------------*/
+.education{
+    background-image: url(joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.education p{
+    width: 60%;
+}
+
+/* CONTACT INFO
+----------------------------*/
+footer{
+    background: #343434;
+    color: #F7FFF7;
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
+}
+
+/* CONTACT INFO
+----------------------------*/
+@media screen and (min-width:750px){
+    .POR1, .POR2{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    header,footer{
+        text-align: center;
+    }
+    .contact-list{
+    display: flex;
+    justify-content: center;
+}
+}
+@media screen and (max-width:749px){
+    h1{
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    .contact-list a{
+        padding: 5px;
+    }
+}
